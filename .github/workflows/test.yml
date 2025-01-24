@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    # Specify the branch that will trigger the workflow
+    branches: [ "main" ]
+
+jobs:
+  # Write name of the job as a key
+  printer:
+    # Specify the runner machine
+    runs-on: macos-latest
+    steps:
+      # Write the step name
+      - name: step1
+        run: |
+          echo "Hello from Milan"
